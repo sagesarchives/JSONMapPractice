@@ -1,0 +1,24 @@
+{
+  "originHash" : "4c4e7bb8e23156ac5caf2ed75c2cb5d8cab106a1ce39d72f78e92cccabc8bcd1",
+  "pins" : [
+    {
+      "identity" : "clusterables",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tomhoag/Clusterables",
+      "state" : {
+        "revision" : "9431c9a31fa9964a1a9d2d419f45faf35d71d455",
+        "version" : "0.5.3"
+      }
+    },
+    {
+      "identity" : "kdtree",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Bersaelor/KDTree.git",
+      "state" : {
+        "revision" : "35d14064d48d92a0c2c1215b93a3118f558b2e6b",
+        "version" : "1.4.2"
+      }
+    }
+  ],
+  "version" : 3
+}

@@ -6,6 +6,10 @@
 	objectVersion = 110;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AE7F7C58306A9D0E009E2E2C /* Clusterables in Frameworks */ = {isa = PBXBuildFile; productRef = AE7F7C57306A9D0E009E2E2C /* Clusterables */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		AE1E1A0730655DA70040A729 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -51,6 +55,7 @@
 		AE1E19F630655DA60040A729 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
+				AE7F7C58306A9D0E009E2E2C /* Clusterables in Frameworks */,
 			);
 		};
 		AE1E1A0330655DA70040A729 /* Frameworks */ = {
@@ -103,6 +108,9 @@
 				AE1E19FB30655DA60040A729 /* JSONMapPractice */,
 			);
 			name = JSONMapPractice;
+			packageProductDependencies = (
+				AE7F7C57306A9D0E009E2E2C /* Clusterables */,
+			);
 			productName = JSONMapPractice;
 			productReference = AE1E19F930655DA60040A729 /* JSONMapPractice.app */;
 			productType = "com.apple.product-type.application";
@@ -181,6 +189,9 @@
 			);
 			mainGroup = AE1E19F030655DA60040A729;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AE7F7C56306A9D0E009E2E2C /* XCRemoteSwiftPackageReference "Clusterables" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AE1E19FA30655DA60040A729 /* Products */;
 			projectDirPath = "";
@@ -550,6 +561,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AE7F7C56306A9D0E009E2E2C /* XCRemoteSwiftPackageReference "Clusterables" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tomhoag/Clusterables";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AE7F7C57306A9D0E009E2E2C /* Clusterables */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AE7F7C56306A9D0E009E2E2C /* XCRemoteSwiftPackageReference "Clusterables" */;
+			productName = Clusterables;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AE1E19F130655DA60040A729 /* Project object */;
 	validationLevel = 1;

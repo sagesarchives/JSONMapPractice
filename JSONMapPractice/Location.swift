@@ -7,8 +7,9 @@
 
 import Foundation
 import CoreLocation
+import Clusterables
 
-struct Location: Codable, Identifiable {
+struct Location: Codable, Identifiable, Clusterable {
     var id: String { landmark }
     
     let landmark: String
@@ -29,4 +30,8 @@ struct Location: Codable, Identifiable {
     var coordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(latitude: landmarkLatitude, longitude: landmarkLongitude)
     } // var coordinate ending brace
+    
+    static func == (lhs: Location, rhs: Location) -> Bool {
+        lhs.id == rhs.id
+    } // func ending brace
 } // struct ending brace
