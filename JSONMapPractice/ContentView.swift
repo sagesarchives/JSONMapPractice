@@ -14,7 +14,7 @@ struct ContentView: View {
     var body: some View {
         Map(position: $position) {
             ForEach(locations) { location in
-                Marker(location.school, coordinate: location.coordinate)
+                Marker(location.landmark, coordinate: location.coordinate)
             } // for each ending brace
         } // map ending brace
         .ignoresSafeArea()
