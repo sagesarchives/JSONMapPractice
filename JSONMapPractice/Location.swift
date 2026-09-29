@@ -9,24 +9,24 @@ import Foundation
 import CoreLocation
 
 struct Location: Codable, Identifiable {
-    var id: String { school }
+    var id: String { landmark }
     
-    let school: String
+    let landmark: String
     let address: String
     let ipAddress: String
-    let schoolLatitude: Double
-    let schoolLongitude: Double
+    let landmarkLatitude: Double
+    let landmarkLongitude: Double
 
     enum CodingKeys: String, CodingKey {
-        case school
+        case landmark
         case address
         // These lines turn JSON's snake case (snake_case) into Swift's camel case
         case ipAddress = "ip_address"
-        case schoolLatitude = "school_latitude"
-        case schoolLongitude = "school_longitude"
+        case landmarkLatitude = "landmark_latitude"
+        case landmarkLongitude = "landmark_longitude"
     } // enum ending brace
     
     var coordinate: CLLocationCoordinate2D {
-        CLLocationCoordinate2D(latitude: schoolLatitude, longitude: schoolLongitude)
+        CLLocationCoordinate2D(latitude: landmarkLatitude, longitude: landmarkLongitude)
     } // var coordinate ending brace
 } // struct ending brace
