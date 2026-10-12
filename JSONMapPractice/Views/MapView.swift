@@ -1,15 +1,16 @@
 //
-//  ContentView.swift
+//  ContentView 2.swift
 //  JSONMapPractice
 //
-//  Created by Nyla Wilson on 9/24/26.
+//  Created by Nyla Wilson on 10/12/26.
 //
+
 
 import SwiftUI
 import MapKit
 import Clusterables
 
-struct ContentView: View {
+struct MapView: View {
     // JSON import variable
     @State private var locations: [Location] = DataLoader.loadLocations()
     
@@ -86,5 +87,5 @@ struct ContentView: View {
 } // struct ending brace
 
 #Preview {
-    ContentView()
+    MapView()
 }
